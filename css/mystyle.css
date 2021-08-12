@@ -1,0 +1,245 @@
+/*by default ther are some gaps in some of elements remove them*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heroSec {
+  width: 100%;
+  height: 960px;
+  display: flex;
+}
+
+.sec1 {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.sec2 {
+  width: 100%;
+  display: flex;
+  flex: 1;
+
+  position: relative;
+}
+
+.moon-figure {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: 50% 50%;
+  background-image: url(/images/luna_large.jpg);
+}
+
+.space-figure {
+  width: 100%;
+  height: 100%;
+  background: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/final-frontier_large.jpg);
+}
+
+.secText {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/*minwidth greater tha max-width less than*/
+
+@media only screen and (min-width: 1441px) {
+  .heroSec {
+    height: 960px;
+  }
+
+  .moon-figure {
+    background-image: url(/images/luna_large.jpg);
+  }
+
+  .space-figure {
+    background-image: url(/images/final-frontier_large.jpg);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx) {
+  .heroSec {
+    height: 960px;
+  }
+
+  .moon-figure {
+    background-image: url(/images/luna_large_2x.jpg);
+  }
+
+  .space-figure {
+    background-image: url(/images/final-frontier_large_2x.jpg);
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .heroSec {
+    height: 712px;
+  }
+  .moon-figure {
+    background-image: url(/images/luna_medium.jpg);
+  }
+
+  .space-figure {
+    background-image: url(/images/final-frontier_medium.jpg);
+  }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+  .heroSec {
+    height: 712px;
+  }
+
+  .moon-figure {
+    background-image: url(/images/luna_medium_2x.jpg);
+  }
+
+  .space-figure {
+    background-image: url(/images/final-frontier_medium_2x.jpg);
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .heroSec {
+    display: block;
+    height: 1000px;
+  }
+
+  .sec1,
+  .sec2 {
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
+
+  .moon-figure {
+    background-image: url(/images/luna_small.jpg);
+  }
+
+  .space-figure {
+    background-image: url(/images/final-frontier_small.jpg);
+  }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+  .heroSec {
+    display: block;
+    height: 1000px;
+  }
+
+  .sec1,
+  .sec2 {
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
+
+  .moon-figure {
+    background-image: url(/images/luna_small_2x.jpg);
+  }
+
+  .space-figure {
+    background-image: url(/images/final-frontier_large_2x.jpg);
+  }
+}
+
+.wideView {
+  display: block;
+}
+
+.smallView {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .wideView {
+    display: none;
+  }
+
+  .smallView {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 991px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 991px) and (min-resolution: 144dpi) {
+  .wideView {
+    display: none;
+  }
+
+  .smallView {
+    display: block;
+  }
+}
+
+.gallery-photo {
+  width: 100%;
+  display: flex;
+}
+
+.one-third {
+  display: flex;
+  flex: 1;
+  background-color: green;
+}
+
+.two-third {
+  display: flex;
+  flex: 2;
+  background-color: blue;
+}
+
+@media only screen and (max-width: 737px) {
+  .gallery-photo {
+    width: 100%;
+    display: block;
+  }
+  .one-third {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .two-third {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 737px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 737px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 737px) and (min-resolution: 144dpi) {
+  .gallery-photo {
+    width: 100%;
+    display: block;
+  }
+  .one-third {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .two-third {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+}
